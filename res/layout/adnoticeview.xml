@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.activity"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <com.view.ViewFlow
+        android:id="@+id/noticeviewflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:duplicateParentState="true" >
+    </com.view.ViewFlow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#33000000" >
+
+        <com.view.CircleFlowIndicator
+            android:id="@+id/noticeviewflowindic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="3dip"
+            app:activeColor="@color/activecolor"
+            app:inactiveColor="@color/inactivecolor"
+            app:inactiveType="fill"
+            app:strokeColor="@color/strokecolor" />
+    </RelativeLayout>
+
+</FrameLayout>
